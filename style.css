@@ -190,6 +190,10 @@ a {
   font-family: inherit;
 }
 
+.skills__card-btn:hover {
+  background-color: #37474f;
+}
+
 .skills__card-1 {
   grid-column: 1/2;
   grid-row: 1/3;
