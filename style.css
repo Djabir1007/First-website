@@ -28,6 +28,7 @@ a {
 .container {
   max-width: 1350px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Шапка */
@@ -121,6 +122,7 @@ a {
   font-size: 36px;
   font-family: inherit;
   cursor: pointer;
+  border: none;
 }
 .hero__btn:hover {
   background-color: #37474f;
@@ -158,7 +160,7 @@ a {
 .skills__card-title {
   font-weight: 600;
   font-size: 30px;
-  padding-left: 43px;
+  margin-left: 43px;
   margin-bottom: 5px;
   line-height: 80px;
 }
@@ -186,8 +188,8 @@ a {
   padding: 17px 64px;
   margin-left: 43px;
   cursor: pointer;
-  margin-bottom: 68px;
   font-family: inherit;
+  border: none;
 }
 
 .skills__card-btn:hover {
@@ -258,9 +260,14 @@ a {
   font-weight: 400;
   font-size: 20px;
   color: #8f95a5;
+  text-align: center;
 }
 
 /* Pricing */
+
+.pricing {
+  margin-bottom: 257px;
+}
 
 .pricing__title {
   font-weight: 600;
@@ -268,87 +275,61 @@ a {
   text-align: center;
   color: #000;
   line-height: 80px;
+  margin-bottom: 57px;
 }
 
 .pricing__flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch; /* важно! растягивает карточки до одинаковой высоты */
 }
 
 .pricing__card {
   max-width: 435px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  height: 100%;
 }
 
-.pricing__card-img--first {
-  margin-top: 57px;
-  margin-bottom: 40px;
+.pricing__card-img {
+  height: 340px;
 }
 
 .pricing__card-title {
   font-weight: 600;
   font-size: 30px;
   line-height: 48px;
-}
-.pricing__card-title-first {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .pricing__card-desc {
   font-size: 20px;
   color: #8f95a5;
-}
-.pricing__card-desc--first {
   margin-bottom: 29px;
 }
 
 .pricing__card-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
   background-color: #eee;
-  padding-left: 18px;
-  padding-right: 24px;
   font-size: 30px;
   color: #263238;
   cursor: pointer;
   border: none;
-  margin-bottom: 257px;
+  max-width: 240px;
+  gap: 10px;
 }
 .pricing__card-price:hover {
   background-color: #d6d6d6;
 }
-
-.pricing__card-price--gray {
-  display: inline;
+.pricing__card-price-subtext {
   font-size: 18px;
   color: #546269;
-  padding-top: 7px;
-  padding-bottom: 11px;
-}
-
-.pricing__card-img--second {
-  margin-top: 83px;
-  margin-bottom: 42px;
-}
-
-.pricing__card-title-second {
-  margin-bottom: 23px;
-}
-
-.pricing__card-desc--second {
-  margin-bottom: 59px;
-}
-
-.pricing__card-img--third {
-  margin-top: 57px;
-  margin-bottom: 11px;
-}
-
-.pricing__card-title--third {
-  margin-bottom: 20px;
-}
-
-.pricing__card-desc--third {
-  margin-bottom: 59px;
 }
 
 /* Contact */
@@ -414,6 +395,10 @@ hr {
   background-color: #c4c4c4;
 }
 
+.footer__border {
+  border-top: 1px solid #c4c4c4;
+  margin-bottom: 31px;
+}
 .footer__flex {
   display: flex;
   justify-content: space-between;
