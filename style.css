@@ -282,16 +282,11 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  align-items: stretch; /* важно! растягивает карточки до одинаковой высоты */
 }
 
 .pricing__card {
-  max-width: 435px;
   display: flex;
   flex-direction: column;
-
-  background-color: #fff;
-  height: 100%;
 }
 
 .pricing__card-img {
@@ -309,6 +304,7 @@ a {
   font-size: 20px;
   color: #8f95a5;
   margin-bottom: 29px;
+  height: 100px;
 }
 
 .pricing__card-price {
