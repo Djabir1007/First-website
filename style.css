@@ -381,6 +381,7 @@ a {
   width: 450px;
   outline: none;
   font-family: inherit;
+  margin-right: 10px;
 }
 .contact__form-input::placeholder {
   color: #8f95a5;
@@ -395,6 +396,7 @@ a {
   color: #fff;
   padding: 25px 82px;
   cursor: pointer;
+  border: none;
 }
 .contact__form-btn:hover {
   background-color: #37474f;
