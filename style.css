@@ -404,9 +404,15 @@ a {
 
 /* Footer */
 
-.footer__container {
-  border-top: 1px solid #c4c4c4;
-  padding: 31px 20px;
+.footer {
+  margin-bottom: 28px;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #c4c4c4;
+  margin-bottom: 31px;
 }
 
 .footer__flex {
