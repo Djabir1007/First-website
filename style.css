@@ -428,3 +428,43 @@ a {
 .footer__text:hover {
   color: #7a7f8d;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1150px;
+    padding: 0 30px;
+  }
+
+  .hero {
+    margin-bottom: 103px;
+  }
+
+  .hero__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero__title {
+    font-size: 56px;
+    margin-bottom: 35px;
+  }
+
+  .hero__title-img {
+    top: 95px;
+  }
+
+  .hero__desc {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .hero__btn {
+    padding: 24px 116px;
+    font-size: 30px;
+  }
+
+  .logo {
+    max-width: 90%;
+  }
+}
