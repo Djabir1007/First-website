@@ -536,6 +536,7 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    align-items: stretch;
   }
 
   .skills__card-1,
@@ -544,10 +545,28 @@ a {
     grid-row: auto;
   }
 
-  .skills__flex {
+  .skills__card {
+    height: 100%;
+    display: flex;
     flex-direction: column;
   }
+  .skills__flex {
+    flex-direction: column;
+    height: 100%;
+  }
 
+  .skills__card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px; /* одинаковый padding для всех */
+  }
+  .skills__card-desc {
+    flex-grow: 1; /* текст занимает доступное пространство */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+  }
   .skills__card-img-4 {
     order: -1;
   }
@@ -955,11 +974,11 @@ a {
   }
 
   .skills__card-desc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .skills__card-subdesc {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .skills__card-btn {
@@ -1144,9 +1163,7 @@ a {
   }
 
   /* Skills */
-  .skills__card-desc {
-    font-size: 10px;
-  }
+
   .skills__card-btn {
     padding: 12px 26px;
   }
