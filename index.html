@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+    <div class="container">
+      <header class="header">
         <div class="header__flex">
           <div class="header__top">
             <a class="header__logo" href="#">
@@ -48,11 +48,9 @@
           </nav>
           <button class="header__btn">Let's Talk</button>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
+      </header>
+      <main>
+        <section class="hero">
           <div class="hero__flex">
             <div class="hero__content">
               <h1 class="hero__title">
@@ -76,10 +74,8 @@
               <img class="logo" src="img/Learning languages-bro 1.png" alt="" />
             </div>
           </div>
-        </div>
-      </section>
-      <section class="skills">
-        <div class="container">
+        </section>
+        <section class="skills">
           <h2 class="skills__title">Skills</h2>
 
           <div class="skills__cards">
@@ -156,10 +152,8 @@
               </div>
             </article>
           </div>
-        </div>
-      </section>
-      <section class="about">
-        <div class="container">
+        </section>
+        <section class="about">
           <div class="about__flex">
             <div class="about__content">
               <h2 class="about__content-title">About Us</h2>
@@ -204,10 +198,8 @@
               />
             </div>
           </div>
-        </div>
-      </section>
-      <section class="pricing">
-        <div class="container">
+        </section>
+        <section class="pricing">
           <h2 class="pricing__title">Pricing</h2>
           <div class="pricing__flex">
             <article class="pricing__card">
@@ -260,50 +252,49 @@
               </button>
             </article>
           </div>
-        </div>
-      </section>
-      <section class="contact">
-        <div class="container">
-          <div class="contact__flex">
-            <div class="contact__img">
-              <img src="img/Ресурс 1 1.png" alt="" />
-            </div>
-            <div class="contact__content">
-              <h2 class="contact__title">Contact Us</h2>
-
-              <!-- Новый элемент для адаптива -->
-              <div class="contact__img-mobile">
-                <img
-                  class="contact__img-mobile-logo"
-                  src="img/Ресурс 1 1.png"
-                  alt="About illustration"
-                />
+        </section>
+        <section class="contact">
+          <div class="contact__container">
+            <div class="contact__flex">
+              <div class="contact__img">
+                <img src="img/Ресурс 1 1.png" alt="" />
               </div>
+              <div class="contact__content">
+                <h2 class="contact__title">Contact Us</h2>
 
-              <p class="contact__desc">
-                Discover your current English level by taking our free online
-                English test.Sign up to our newsletter for learning tips and
-                free resources
-              </p>
-              <form action="" class="contact__form">
-                <input
-                  class="contact__form-input"
-                  type="email"
-                  placeholder="Enter Your E-mail"
-                />
-                <input
-                  class="contact__form-btn"
-                  type="submit"
-                  value="Subscribe"
-                />
-              </form>
+                <!-- Новый элемент для адаптива -->
+                <div class="contact__img-mobile">
+                  <img
+                    class="contact__img-mobile-logo"
+                    src="img/Ресурс 1 1.png"
+                    alt="About illustration"
+                  />
+                </div>
+
+                <p class="contact__desc">
+                  Discover your current English level by taking our free online
+                  English test.Sign up to our newsletter for learning tips and
+                  free resources
+                </p>
+
+                <form action="" class="contact__form">
+                  <input
+                    class="contact__form-input"
+                    type="email"
+                    placeholder="Enter Your E-mail"
+                  />
+                  <input
+                    class="contact__form-btn"
+                    type="submit"
+                    value="Subscribe"
+                  />
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
+        </section>
+      </main>
+      <footer class="footer">
         <div class="line"></div>
         <div class="footer__flex">
           <a class="footer__logo" href="#">
@@ -313,8 +304,8 @@
             Terms and Conditions • Privacy Policy • Cookie Policy
           </a>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script>
       const burger = document.querySelector('.header__burger')
       const menu = document.querySelector('.header__menu')
